@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dummy Web Client</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Intentionally missing CSP and other security headers for demo purposes -->
+</head>
+<body>
+  <div class="container">
+    <h1>Dummy Web Client</h1>
+
+    <section class="card">
+      <h2>Login</h2>
+      <label>Email</label>
+      <input id="email" type="email" placeholder="user@example.com" />
+
+      <label>Password</label>
+      <input id="password" type="password" placeholder="password" />
+
+      <label>Profile Bio</label>
+      <textarea id="bio" placeholder="Tell us about yourself"></textarea>
+
+      <button id="loginBtn">Login</button>
+    </section>
+
+    <section class="card">
+      <h2>User Preview</h2>
+      <div id="userPreview"></div>
+    </section>
+
+    <section class="card">
+      <h2>Admin Panel</h2>
+      <button id="adminBtn">Open Admin View</button>
+      <div id="adminResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>Search</h2>
+      <input id="search" type="text" placeholder="Search users..." />
+      <button id="searchBtn">Run Search</button>
+      <pre id="searchResult"></pre>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
