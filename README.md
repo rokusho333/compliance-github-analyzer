@@ -1,40 +1,25 @@
-# Compliance GitHub Analyzer
+# Dummy Fullstack App (Intentionally Insecure)
 
-A multi-agent workflow that reviews pull requests or code diffs to identify:
+This project is intentionally insecure and non-compliant. It exists only as a test fixture for the
+Compliance GitHub Analyzer project.
 
-- security issues
-- compliance violations
-- engineering bad practices
+## Structure
+- `frontend/` — simple browser client
+- `backend/` — Flask API
 
-It recommends fixes, can generate validation tests, and returns a final review decision.
+## Purpose
+Use this code to verify that your analyzer can detect:
+- hardcoded secrets
+- weak authentication and authorization
+- insecure token and PII handling
+- XSS and unsafe DOM injection
+- SQL injection
+- unsafe file upload handling
+- insecure logging
+- missing validation
+- stack trace leakage
+- overly permissive CORS
+- debug mode in production
 
-## MVP
-- Parse PR diff
-- Detect risky patterns
-- Map findings to compliance/security rules
-- Suggest fixes
-- Generate validation tests
-- Return final recommendation
-
-## Project idea
-This project is inspired by AI-agent SDLC workflows such as PR review, security review,
-test generation, and compliance validation.
-
-## Planned agents
-- Intake Agent
-- Compliance Agent
-- Security Agent
-- Remediation Agent
-- Report Agent
-
-## Input
-A pasted git diff or sample source file.
-
-## Output
-A structured review report with:
-- issues found
-- severity
-- violated rule
-- recommended fix
-- optional tests
-- final decision
+## Do not deploy
+This code is intentionally unsafe and should only be used in a local test/demo branch.
