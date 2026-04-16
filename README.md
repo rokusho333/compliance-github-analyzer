@@ -1,40 +1,19 @@
-# Compliance GitHub Analyzer
+# DEV_SERVER Test Fixture
 
-A multi-agent workflow that reviews pull requests or code diffs to identify:
+This branch fixture contains an intentionally insecure backend project for testing the Compliance GitHub Analyzer.
 
-- security issues
-- compliance violations
-- engineering bad practices
+## Folder
+- `dummy-backend-api/`
 
-It recommends fixes, can generate validation tests, and returns a final review decision.
-
-## MVP
-- Parse PR diff
-- Detect risky patterns
-- Map findings to compliance/security rules
-- Suggest fixes
-- Generate validation tests
-- Return final recommendation
-
-## Project idea
-This project is inspired by AI-agent SDLC workflows such as PR review, security review,
-test generation, and compliance validation.
-
-## Planned agents
-- Intake Agent
-- Compliance Agent
-- Security Agent
-- Remediation Agent
-- Report Agent
-
-## Input
-A pasted git diff or sample source file.
-
-## Output
-A structured review report with:
-- issues found
-- severity
-- violated rule
-- recommended fix
-- optional tests
-- final decision
+## Seeded issues
+- hardcoded secrets
+- plaintext password storage
+- permissive CORS
+- missing authentication / authorization
+- sensitive data in logs
+- SQL injection
+- sensitive data exposure in responses
+- unsafe file upload path handling
+- missing validation
+- stack trace leakage
+- debug mode enabled
