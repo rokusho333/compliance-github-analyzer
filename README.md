@@ -38,3 +38,9 @@ A structured review report with:
 - recommended fix
 - optional tests
 - final decision
+
+
+
+## How to run this project
+
+python poc.py --repo ./sample_repo --adrs-dir ./adrs
